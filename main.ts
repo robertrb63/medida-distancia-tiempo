@@ -24,7 +24,8 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showIcon(IconNames.Umbrella)
-    DFRobotMaqueenPlus.mototRun(Motors.M2, Dir.CW, 90)
+    DFRobotMaqueenPlus.mototRun(Motors.M2, Dir.CW, 80)
+    DFRobotMaqueenPlus.mototRun(Motors.M1, Dir.CCW, 80)
     DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.YELLOW)
     basic.pause(1000)
     DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
@@ -34,7 +35,6 @@ input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Diamond)
     DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.RED)
     basic.pause(500)
-    DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
     basic.clearScreen()
 })
 input.onPinPressed(TouchPin.P1, function () {
