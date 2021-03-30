@@ -24,8 +24,8 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showIcon(IconNames.Umbrella)
-    DFRobotMaqueenPlus.mototRun(Motors.M2, Dir.CW, 80)
-    DFRobotMaqueenPlus.mototRun(Motors.M1, Dir.CCW, 80)
+    DFRobotMaqueenPlus.mototRun(Motors.M2, Dir.CW, 41)
+    DFRobotMaqueenPlus.mototRun(Motors.M1, Dir.CCW, 41)
     DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.YELLOW)
     basic.pause(1000)
     DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
